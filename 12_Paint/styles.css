@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#search-bar {
+    padding: 5px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta {
+    background-color: #ff5733;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.featured-collections,
+.artist-bio,
+.testimonials,
+.product-listings,
+.newsletter,
+.blog {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-collections .collections-grid,
+.product-listings .product-grid,
+.testimonials .testimonials-grid,
+.blog .blog-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.collection-item,
+.product-item,
+.testimonial,
+.blog-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+
+}
+
+.bio-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.bio-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-content {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-links,
+.social-media,
+.contact-info {
+    text-align: center;
+}
+
+.footer-links a,
+.social-media a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
