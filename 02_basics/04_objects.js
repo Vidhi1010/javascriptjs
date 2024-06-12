@@ -11,8 +11,8 @@ const regularUser = {
     email: "some@gmail.com",
     fullname: {
         userfullname: {
-            firstname: "hitesh",
-            lastname: "choudhary"
+            firstname: "vidhi",
+            lastname: "singh"
         }
     }
 }
@@ -26,7 +26,7 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = { obj1, obj2 }
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 
-const obj3 = {...obj1, ...obj2}
+const obj3 = {...obj1, ...obj2}//spread operator
 // console.log(obj3);
 
 
@@ -58,22 +58,25 @@ users[1].email
 const course = {
     coursename: "js in hindi",
     price: "999",
-    courseInstructor: "hitesh"
+    courseInstructor: "vidhi"
 }
 
 // course.courseInstructor
 
+//object destructuring-{ }
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
 console.log(instructor);
 
-// {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
-//     "price": "free"
-// }
-
+//json-- api call in the form of object
+/* {
+    "name": "vidhi",
+    "coursename": "js in hindi",
+    "price": "free"
+}
+ */
+//api in the form of array 
 [
     {},
     {},

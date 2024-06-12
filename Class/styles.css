@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px 0;
+    background-color: yellow;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background: #f7df05;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.featured-articles, .popular-books, .featured-collections, .trending-topics {
+    padding: 50px 0;
+}
+
+.featured-articles h2, .popular-books h2, .featured-collections h2, .trending-topics h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.articles, .books, .collections, .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.articles article, .books article, .collections .collection, .topics article {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.articles article img, .books article img, .collections .collection img, .topics article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articles article h3, .books article h3, .collections .collection h3, .topics article h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.articles article p, .books article p, .collections .collection p {
+    font-size: 1em;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .quick-links, footer .social-media, footer .footer-text {
+    flex: 1 1 30%;
+}
+
+footer .quick-links ul, footer .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .quick-links ul li, footer .social-media ul li {
+    margin-bottom: 10px;
+}
+
+footer .quick-links ul li a, footer .social-media ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .social-media ul li img {
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer-text p {
+    font-size: 0.9em;
+}
