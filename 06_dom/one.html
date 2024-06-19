@@ -29,9 +29,22 @@
     </div>
     <script>
         const turnGreen = document.querySelector('ul');
-        turnGreen.style.backgroundColor = "green";
-        turnGreen.style.padding = '10px';
-        turnGreen.style.color = 'yellow';
+        //turnGreen.style.backgroundColor = "green";
+        //turnGreen.style.padding = '10px';
+
+        const tempLiList = document.querySelectorAll('li')
+        //tempLiList[0].style.color = 'yellow';
+
+        tempLiList.forEach(function (l) {
+            //l.style.backgroundColor = 'green';
+        })
+
+        const tempClassList = document.getElementsByClassName('list-item');
+        const myConvertedArray = Array.from(tempClassList);
+        myConvertedArray.forEach(function(li) {
+            li.style.color = 'orange';
+        })
+
     </script>
 </body>
 </html>
