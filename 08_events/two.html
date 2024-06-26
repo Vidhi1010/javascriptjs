@@ -11,9 +11,9 @@
 </body>
 <script>
     const sayVidhi = function(){
-        console.log("Vidhi");
+        console.log("Vidhi"); 
     }
-    const changeText = function(){
+   /*  const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
 
@@ -21,7 +21,16 @@
 
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
-        console.log("STOPPED")
-    })
+        console.log("STOPPED") 
+    }) */
+
+   const changeText = function() {
+    document.querySelector('h1').innerHTML = "best js series";
+   }
+   const changeMe = setTimeout(changeText,2000);
+   document.querySelector('#stop').addEventListener('click', function() {
+    clearTimeout(changeMe);
+    console.log("Stopped");
+   })
 </script>
 </html>
