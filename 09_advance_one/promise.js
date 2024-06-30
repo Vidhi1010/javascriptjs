@@ -86,7 +86,7 @@ consumePromiseFive(); */
     console.log("Error:", error);
   }
 }
-getAllUsers(); */
+getAllUsers(); */  
 
 
 fetch('https://api.github.com/users/hiteshchoudhary')
