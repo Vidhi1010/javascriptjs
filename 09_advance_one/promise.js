@@ -89,11 +89,42 @@ consumePromiseFive(); */
 getAllUsers(); */  
 
 
-fetch('https://api.github.com/users/hiteshchoudhary')
+/* fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
     return response.json();
 })
 .then((error) => {
   console.log(data);
 })
-.catch((error) => console.log(error));
+.catch((error) => console.log(error)); */
+/* 
+function getData(dataId, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("success");
+      if (getNextData) {
+        getNextData();
+      }
+    }, 2000);
+  });
+}  */
+
+
+/* const getPromise = () => {
+  return new Promise((resolve, reject) => {
+      console.log("I am a promise");
+      //resolve("success");
+      reject("error");
+});
+};
+
+let promise = getPromise();
+promise.then((res) => {
+  console.log("promise fullfilled", res);
+});
+
+promise.catch((err) => {
+  console.log("rejected", err);
+}); */
+
