@@ -86,8 +86,7 @@ consumePromiseFive(); */
     console.log("Error:", error);
   }
 }
-getAllUsers(); */  
-
+getAllUsers(); */
 
 /* fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
@@ -110,7 +109,6 @@ function getData(dataId, getNextData) {
   });
 }  */
 
-
 /* const getPromise = () => {
   return new Promise((resolve, reject) => {
       console.log("I am a promise");
@@ -128,3 +126,31 @@ promise.catch((err) => {
   console.log("rejected", err);
 }); */
 
+
+//Promise chaining
+
+function asyncFunc1() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data1");
+      resolve("success");
+    }, 2000);
+  });
+}
+
+function asyncFunc2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data2");
+      resolve("success");
+    }, 2000);
+  });
+}
+console.log("fetching data1");
+asyncFunc1().then((res) => {
+  //console.log(res);
+  console.log("fetching data2");
+  asyncFunc2().then((res) => {
+    //console.log(res);
+  });
+});
