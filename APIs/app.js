@@ -9,11 +9,13 @@ console.log(promise); */
 
 //callback- don't pass function with paranthesis as an argument 
 
-function sum (a, b) {
+/* function sum (a, b) {
     console.log(a + b);
 }
 function calculator(a, b , sumCallback) {
     sumCallback(a, b);
 }
 
-calculator(1, 2, sum);
+calculator(1, 2, sum); */
+
+ 

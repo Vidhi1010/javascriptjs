@@ -20,6 +20,16 @@ if(age >= 18) {
     console.log("child");
 } */
 
+/* function getData(dataId) {
+  setTimeout(() => {
+    console.log("data", dataId);
+  }, 2000);
+}
+
+getData(1);
+getData(2);
+getData(3); */
+
 function getData(dataId, getNextData) {
   setTimeout(() => {
     console.log("data", dataId);
@@ -32,5 +42,3 @@ function getData(dataId, getNextData) {
 getData(1, () => {
   getData(2);
 });
-
-
