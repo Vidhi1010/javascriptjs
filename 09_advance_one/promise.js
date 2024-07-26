@@ -129,7 +129,7 @@ promise.catch((err) => {
 
 //Promise chaining
 
-function asyncFunc1() {
+/* function asyncFunc1() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("data1");
@@ -153,4 +153,22 @@ asyncFunc1().then((res) => {
   asyncFunc2().then((res) => {
     //console.log(res);
   });
-});
+}); */
+
+/* let promise = new Promise((resolve, reject) => {
+  console.log("I am a promise"); 
+}); */
+
+function getData(dataId, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("success")
+      if (getNextData) {
+        getNextData();
+      }
+    }, 2000);
+  })
+}
+ 
+ 

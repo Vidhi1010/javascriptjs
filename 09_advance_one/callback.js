@@ -39,6 +39,11 @@ function getData(dataId, getNextData) {
   }, 2000);
 }
 
+//callback hell- pyramid of doom
 getData(1, () => {
-  getData(2);
+  console.log("getting data2 ...");
+  getData(2, () => {
+    console.log("getting data3 ...");
+    getData(3)
+  });
 });
