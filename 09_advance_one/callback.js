@@ -40,10 +40,22 @@ function getData(dataId, getNextData) {
 }
 
 //callback hell- pyramid of doom
-getData(1, () => {
+/* getData(1, () => {
   console.log("getting data2 ...");
   getData(2, () => {
     console.log("getting data3 ...");
-    getData(3)
+    getData(3);
   });
-});
+}); */
+
+//promise chaining
+getData(1)
+  .then((res) => {
+    return getData(2);
+  })
+  .then((res) => {
+    return getData(3);
+  })
+  .then((res) => {
+    return getData(res);
+  });
