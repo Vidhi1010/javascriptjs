@@ -30,6 +30,20 @@ async function getAllData() {
   await getData(2);
   console.log("getting data3...");
   await getData(3);
-  console.log("getting data4...");
-  await getData(4);
 }
+
+//IIFE
+/* 
+-avoid polluting the global namespace- sometimes while creating functions unecessary get created that is not required, so when we use those function as iife the will execute for one time and the get deleted
+
+-execute an async function - don't need to create unnecessary function like in above case getAllData()
+
+*/
+(async function () {
+    console.log("getting data1...");
+  await getData(1);
+  console.log("getting data2...");
+  await getData(2);
+  console.log("getting data3...");
+  await getData(3);
+})();
