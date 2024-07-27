@@ -22,12 +22,30 @@ calculator(1, 2, sum); */
 
 const URL = "https://cat-fact.herokuapp.com/facts";
 
-const getFacts = async () => {
+const factPara = document.querySelector("#fact");
+const btn = document.querySelector("#btn");
+
+
+/* const getFacts = async () => {
   console.log("getting data ...");
   let response = await fetch(URL);
-  console.log(response);//json format
+  console.log(response); //json format
   let data = await response.json();
-  console.log(data);
-};
+  //console.log(data[0].text);
+  //factPara.innerText = data[0].text;
+  factPara.innerText = data[1].text;
+}; */
+
+function getFacts() {
+    fetch(URL)
+    .then((response) => {
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+        factPara.innerText = data[0].text;
+    })
+}
+
+btn.addEventListener("click", getFacts);
 
 //json() method: returns a second promise that revolves with the result of parsing the response body text as json, input is json,output is js object)
