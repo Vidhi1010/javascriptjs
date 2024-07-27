@@ -36,7 +36,7 @@ const btn = document.querySelector("#btn");
   factPara.innerText = data[1].text;
 }; */
 
-function getFacts() {
+function getFacts() { 
     fetch(URL)
     .then((response) => {
         return response.json();
