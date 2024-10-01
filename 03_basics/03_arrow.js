@@ -1,4 +1,4 @@
-/* const user = {
+const user = {
     username: "vidhi",
     price: 999,
 
@@ -8,9 +8,9 @@
         console.log(this);
     }
 
-} */
+} 
 
-//user.welcomeMessage()
+user.welcomeMessage()
 //user.username = "sam" 
 //user.welcomeMessage()
 
@@ -29,7 +29,7 @@
 //     console.log(this.username);
 // }
 
-const chai =  () => {
+/* const chai =  () => {
     let username = "vidhi"
     console.log(this);
 }
@@ -39,7 +39,7 @@ chai()
 const addTwo = (num1, num2) => {
     return num1 + num2
 }
-
+ */
 // const addTwo = (num1, num2) =>  num1 + num2
 
 // const addTwo = (num1, num2) => ( num1 + num2 )

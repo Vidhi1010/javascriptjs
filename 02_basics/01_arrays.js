@@ -3,9 +3,17 @@
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
 
+//array constructor
 const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]);
 
+const fruits = ['apple', 'orange', 'banana', 'mango'];
+
+//fruits.forEach(fruit => console.log(fruit));
+
+/* for(const fruit of fruits) {
+    console.log(fruit);
+} */
 // Array methods
 
 // myArr.push(6)
@@ -18,6 +26,7 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(3));
 
+//.join changes the array datatype
 // const newArr = myArr.join()
 
 // console.log(myArr);

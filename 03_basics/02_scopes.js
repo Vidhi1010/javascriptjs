@@ -15,10 +15,10 @@ if (true) {
 
 
 function one(){
-    const username = "hitesh"
+    const username = "vidhi"
 
     function two(){
-        const website = "youtube"
+        const website = "google.com"
         console.log(username);
     }
     // console.log(website);
@@ -37,7 +37,7 @@ if (true) {
     }
      //console.log(website);
 }
-
+ 
 // console.log(username);
 
 
@@ -51,7 +51,7 @@ function addone(num){
 }
 
 
-addTwo(5)
+//addTwo(5)
 const addTwo = function(num){
     return num + 2
 }
