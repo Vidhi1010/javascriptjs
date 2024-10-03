@@ -1,15 +1,16 @@
 // singleton
-// Object.create
+
+// Object.create - creates a new object through constructor methods
 
 // object literals
 
 const mySym = Symbol("key1")
-
+ 
 
 const JsUser = {
     name: "Vidhi",
     "full name": "Vidhi Singh",
-    [mySym]: "mykey1", 
+    [mySym]: "mykey1", //symbol will always be written inside the brackets
     age: 21,
     location: "Panjab",
     email: "vidhi@google.com",

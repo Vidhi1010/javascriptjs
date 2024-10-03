@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object() //singleton object
+const tinderUser = {}//non-singleton object
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -33,15 +33,15 @@ const obj3 = {...obj1, ...obj2}//spread operator
 const users = [
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "v@gmail.com"
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "v@gmail.com"
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "v@gmail.com"
     },
 ]
 
@@ -57,13 +57,13 @@ users[1].email
 
 const course = {
     coursename: "js in hindi",
-    price: "999",
+    price: "999", 
     courseInstructor: "vidhi"
 }
 
 // course.courseInstructor
 
-//object destructuring-{ }
+//object destructuring-{ } 
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
