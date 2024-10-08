@@ -1,6 +1,6 @@
 // for of
 
-// ["", "", ""]
+// ["", "", ""] 
 // [{}, {}, {}]
 
 const arr = [1, 2, 3, 4, 5]
@@ -15,7 +15,7 @@ for (const greet of greetings) {
 }
 
 // Maps-objects that holds key-values pairs,unique values
-
+ 
 const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
@@ -29,7 +29,7 @@ for (const [key, value] of map) {
     // console.log(key, ':-', value);
 }
 
-const myObject = {
+const myObject = { 
     game1: 'NFS',
     game2: 'Spiderman'
 }
