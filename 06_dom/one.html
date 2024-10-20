@@ -9,14 +9,14 @@
             background-color: #212121;
             color: #fff;
         }
-    </style> 
+    </style>  
 </head>  
 <body class="bg-black"> 
     <div >
         <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
-        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2> 
         <p>Lorem ipsum dolor sit amet.</p>
         <input type="password" name="" id="">
 
@@ -29,7 +29,7 @@
     </div>
     <script> 
         const turnGreen = document.querySelector('ul');
-        //turnGreen.style.backgroundColor = "green";
+        turnGreen.style.backgroundColor = "green";
         //turnGreen.style.padding = '10px';
 
         const tempLiList = document.querySelectorAll('li')
@@ -38,6 +38,7 @@
         tempLiList.forEach(function (l) {
             //l.style.backgroundColor = 'green';
         })
+        
 
         const tempClassList = document.getElementsByClassName('list-item');
         const myConvertedArray = Array.from(tempClassList);
