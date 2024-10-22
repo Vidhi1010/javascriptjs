@@ -8,7 +8,9 @@
 <body>
     <div>
         <h1 id="change-block">Welcome to my website!</h1>
-        <p>This is a simple website created using HTML, CSS, and JavaScript.</p>
+        <p>Hi there, My name is Vidhi Singh:)</p>
+        <p class="block remove" > Here is the code for you</p>
+        <pre><code>console.log('Hey There')</code></pre>
         <button id="btn" >Click Me</button>
     </div>
     <script>
@@ -16,8 +18,19 @@
         const change = document.getElementById('change-block');
 
         btn.addEventListener("click", () => {
-            change.style.color = "red";
-        })
+            if(change.style.color === "red") {
+                change.style.color = "green";
+            }else {
+                change.style.color = "red";
+            }
+        });
+
+        const allChildern = document.querySelector('body').children;
+
+        for(let i = 0; i < allChildern.length; i++) {
+            allChildern.item(i).addEventListener('click', () => {
+                allChildern.item(i).remove();            })
+        }
     </script>
 </body>
 </html>
