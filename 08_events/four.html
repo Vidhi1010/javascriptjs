@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="change-block">Welcome to my website!</h1>
+        <p>This is a simple website created using HTML, CSS, and JavaScript.</p>
+        <button id="btn" >Click Me</button>
+    </div>
+    <script>
+        const btn = document.getElementById('btn');
+        const change = document.getElementById('change-block');
+
+        btn.addEventListener("click", () => {
+            change.style.color = "red";
+        })
+    </script>
+</body>
+</html>
