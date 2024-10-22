@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <h1 id="change-block">Welcome to my website!</h1>
-        <p>Hi there, My name is Vidhi Singh:)</p>
-        <p class="block remove" > Here is the code for you</p>
-        <pre><code>console.log('Hey There')</code></pre>
-        <button id="btn" >Click Me</button>
+      <h1 id="change-block">Welcome to my website!</h1>
+      <p>Hi there, My name is Vidhi Singh:)</p>
+      <p class="block remove">Here is the code for you</p>
+      <pre><code>console.log('Hey There')</code></pre>
+      
     </div>
-    <script>
-        const btn = document.getElementById('btn');
-        const change = document.getElementById('change-block');
 
-        btn.addEventListener("click", () => {
+    <div id="container" class="container"></div>
+    <button id="btn">Click Me</button>
+
+    <script>
+      const btn = document.getElementById("btn");
+      //const change = document.getElementById('change-block');
+
+      /* btn.addEventListener("click", () => {
             if(change.style.color === "red") {
                 change.style.color = "green";
             }else {
@@ -30,7 +34,17 @@
         for(let i = 0; i < allChildern.length; i++) {
             allChildern.item(i).addEventListener('click', () => {
                 allChildern.item(i).remove();            })
-        }
+        } */
+
+      const cont = document.getElementById("container");
+
+      let count = 0;
+      btn.addEventListener("click", () => {
+        const el = document.createElement("h1");
+        el.innerHTML = count;
+        cont.appendChild(el);
+        count++;
+      });
     </script>
-</body>
+  </body>
 </html>
