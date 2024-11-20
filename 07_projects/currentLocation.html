@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Location</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Getting Users Location</h1>
     <button id="get-location-button">Get Users Location</button>
 
     <script>
-        const button = document.getElementById("get-location-button");
+      const button = document.getElementById("get-location-button");
 
-        function gotLocation(position) {
-            console.log(position);
-        }
-        function failedtotGet(position) {
-            console.log("Failed to get location");
-        }
-        button.addEventListener('click',async ()=> {
-            navigator.geolocation.getCurrentPosition(gotLocation, failedtotGet);
-        })
+      async function getData(lat, long) {
+        const promise = await fetch(
+          `http://api.weatherapi.com/v1/current.json?key=d90a7686af3b40c19a4175112242510&q=${lat},${long}&aqi=yes`
+        );
+
+        return await promise.json();
+      }
+
+      async function gotLocation(position) {
+        const result = await getData(
+            position.coords.latitude,
+            position.coords.longitude);
+        console.log(result);
+      }
+      function failedtotGet(position) {
+        console.log("Failed to get location");
+      }
+      button.addEventListener("click", async () => {
+        navigator.geolocation.getCurrentPosition(gotLocation, failedtotGet);
+      });
     </script>
-</body>
+  </body>
 </html>
