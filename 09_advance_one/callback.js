@@ -48,6 +48,7 @@ function getData(dataId, getNextData) {
   });
 }); */
 
+
 //promise chaining
 getData(1)
   .then((res) => {
