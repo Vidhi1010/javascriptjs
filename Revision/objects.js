@@ -1,9 +1,10 @@
 const person = {
     name: "John",
     age: 20,
-    isStudent: true,
+    isStudent: true, 
 }
 console.log(person);
+
 //we can add, modify, or delete properties at runtime.
 
 person.address = "123 Street Name"; //add
