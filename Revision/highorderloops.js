@@ -67,6 +67,8 @@ for (const [key, value] in map1) {
 
 // the forEach method in JavaScript takes a callback function as an argument.
 
+//the forEach method does not return any value or it always returns undefined
+
 const coding = ["js", "cpp", "py", "java", "rb"];
 
 coding.forEach(function (item) {
