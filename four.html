@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(37, 37, 37); color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerText = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage('Python');
+    addLanguage('Java');
+ 
+
+    //optimal way 
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage('C++');
+
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    secondLang.innerHTML = "Mojo";
+    
+</script>
+</html>
