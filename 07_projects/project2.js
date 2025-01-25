@@ -1,5 +1,8 @@
 const form = document.querySelector('form');
 
+//this usecase will give empty value
+//const height = parseInt(document.querySelector('#height').value);
+
 form.addEventListener('submit', function(e) {
     e.preventDefault()
     const height = parseInt(document.querySelector('#height').value);
@@ -17,7 +20,7 @@ form.addEventListener('submit', function(e) {
 
         if(bmi < 18.6){
             results.innerHTML = `your bmi is ${bmi}, You are Underweight`;
-        }else if(bmi < 18.6 && bmi > 24.9) {
+        }else if(bmi > 18.6 && bmi < 24.9) {
              results.innerHTML = `your bmi is ${bmi}, You are Normal Range`;
         }else {
              results.innerHTML = `your bmi is ${bmi}, You are Overweight`;
