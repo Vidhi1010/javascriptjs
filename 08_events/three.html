@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur Javascript</h1>
+    <h1>Hello</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
@@ -14,6 +14,8 @@
     const sayDate = function(str){
         console.log(str, Date.now());
     }
+
+    
     let intervalId;
     const start = document.querySelector('#start').addEventListener('click', function() {
         intervalId = setInterval(sayDate, 1000, "hi");

@@ -5,7 +5,7 @@ const promiseOne = new Promise(function(resolve, reject){
         console.log('Async task is compelete');
         resolve()
     }, 1000)
-})
+}) 
 
 promiseOne.then(function(){
     console.log("Promise consumed");
