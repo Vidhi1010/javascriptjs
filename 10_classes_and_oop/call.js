@@ -3,13 +3,13 @@ function SetUsername(username){
     this.username = username
     console.log("called");
 }
-
+ 
 function createUser(username, email, password){
-    SetUsername.call(this, username)
+    SetUsername.call(this, username)//call is used to call the function and for holding the reference of this keyword 
    
     this.email = email
     this.password = password
 }
 
 const chai = new createUser("chai", "chai@fb.com", "123")
-console.log(chai);
+console.log(chai); 

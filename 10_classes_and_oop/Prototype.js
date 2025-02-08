@@ -17,7 +17,7 @@ let heroPower = {
 }
 
 Object.prototype.hitesh = function(){
-    console.log(`hitesh is present in all objects`);
+    console.log(`hitesh is present in a ll objects`);
 }
 
 Array.prototype.heyHitesh = function(){
