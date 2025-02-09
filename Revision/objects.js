@@ -27,3 +27,11 @@ const calculator = {
 const parent = { greet: () => "Hello" };
 const child = Object.create(parent);
 console.log(child.greet());
+
+
+//
+const obj1 = { a: 1, b: 2 };
+const obj2 = { ...obj1 };
+obj2.a = 5;
+console.log(obj2); // Output: { a: 5, b: 2 }
+console.log(obj1); // Output: { a: 1, b: 2 }
