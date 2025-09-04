@@ -47,3 +47,15 @@ function myEvery(arr, callback) {
 }
 
 console.log(myEvery(num, even));
+
+Array.prototype.customForEach = function (callback) {
+  for (let i = 0; i < this.length; i++) {
+    callback(this[i], i, this); // Pass (value, index, array) to the callback
+  }
+};
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.customForEach((num, index) => {
+  console.log(`Index: ${index}, Value: ${num}`);
+});

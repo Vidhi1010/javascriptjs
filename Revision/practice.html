@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+    body {
+      height: 100vh; /* full screen height */
+      margin: 0;
+    }
+  </style>
+  
+  </head>
+  <body id="body">
+    <!--  <input type="text" id="inputField" placeholder="Enter Name">
+    <input type="password" id="passwordField" placeholder="Enter Password">
+    <button id="submit">Submit</button> -->
+
+    <!--  <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta commodi non, voluptatibus itaque tempora cumque porro quidem laboriosam exercitationem dignissimos qui ducimus, sint ut harum nisi reprehenderit hic, eum fuga!</p>
+
+    <button id="toggle">Toggle Button</button> -->
+
+
+    <button id = "count">count</button>
+  </body>
+  <script>
+    /* document.getElementById("submit").addEventListener("click", function() {
+        const inputField = document.getElementById("inputField");
+        const password = document.getElementById("passwordField");
+        
+        if (inputField.value === "" || password.value === "") {
+            alert("Please fill in all fields.");
+        } else {
+            alert("Form submitted successfully!");
+        }
+    }) */
+    /* const para = document.getElementById("para");
+    const toggleButton = document.getElementById("toggle");
+    toggleButton.addEventListener("click", function(){
+        if(para.style.display === "none") {
+            para.style.display = " block";
+            toggleButton.textContent = "Hide Paragraph";
+        } else {
+            para.style.display = "none";
+            toggleButton.textContent = "Show Paragraph";
+        }
+    }) */
+
+    
+    // Change background color on click
+
+   /*  document.body.addEventListener("click", function () {
+      let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+      document.body.style.backgroundColor = randomColor;
+    }); */
+
+    // Count button clicks
+    let count = 0;
+    document.getElementById("count").addEventListener("click", function() {
+        count++;
+        this.textContent = `Count: ${count}`;
+    })
+  </script>
+</html>

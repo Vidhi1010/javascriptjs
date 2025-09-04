@@ -19,7 +19,7 @@ user.welcomeMessage()
 
 /*  function chai(){
      let username = "vidhi"
-     console.log(this.username);
+     console.log(this.username);//this will return undefined because this is not referring to user object
  }
 
  chai(); */

@@ -9,8 +9,8 @@
             background-color: #212121;
             color: #fff;
         }
-    </style>  
-    <link rel="stylesheet" href="">
+    </style>   
+    <link rel="stylesheet" href=""> 
 </head>  
 <body class="bg-black"> 
     <div >
@@ -23,12 +23,13 @@
 
         <ul>
             <li class="list-item">one</li>
-            <li class="list-item">two</li>
+            <li class="list-ite m">two</li>
             <li class="list-item">three</li>
             <li class="list-item">four</li>
         </ul>
     </div>
-    <script> 
+    <script>
+
         //alert("hello");
         const turnGreen = document.querySelector('ul');
         turnGreen.style.backgroundColor = "green";
@@ -40,9 +41,9 @@
         tempLiList.forEach(function (l) {
             //l.style.backgroundColor = 'green';
         })
-        
-
+         
         const tempClassList = document.getElementsByClassName('list-item');
+         
         const myConvertedArray = Array.from(tempClassList);
         myConvertedArray.forEach(function(li) {
             li.style.color = 'orange';

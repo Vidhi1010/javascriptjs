@@ -7,7 +7,7 @@ const randomColor = function() {
     return color;
 }
 let intervalId;
-const startChangingColor = function() {
+const startChangingColor = function()  {
 
     if(!intervalId) {
         intervalId = setInterval(changeBgColor, 1000);

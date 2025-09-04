@@ -1,0 +1,23 @@
+Project you should build to get confidence and right way to build it.
+
+Project HTML and CSS
+Login form 
+Personal portfolio website 
+Image gallery 
+
+Project Build using HTML , CSS and JS
+1: Background color changer
+2: Digital clock 
+3: Calculator 
+4: password generator 
+5: Random quotes Generator 
+6: BMI calculator 
+7: Tic tac toe
+8: To do list
+9: Weather app
+10: Currency converter 
+
+11: Zomato clone
+12: Amazon clone
+13: Youtube clone
+14: Coder army clone

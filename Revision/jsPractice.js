@@ -126,3 +126,56 @@ function fact(n) {
 }
 
 console.log(fact(3));
+
+
+//////////////////////////////////////////////////////
+
+let nestedArr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+let largest = 0;
+function maxNested(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        for(let j = 0; j < arr.length; j++) {
+            if(arr[i][j] > largest) {
+                largest = arr[i][j];
+            } 
+        }
+    }
+    return largest;
+}
+console.log(maxNested(nestedArr));
+
+//////////////////////////////////////////////////////
+
+//prime
+function isPrime(n) {
+    if(n < 2) {
+        return false;
+    }
+
+    for(let i = 2; i <= Math.sqrt(n); i++) {
+        if(n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isPrime(3));
+
+//prime in given range
+
+function primeRange(start, end) {
+    let prime = [];
+
+    for(let i = start; i <= end; i++) {
+        if(isPrime(i)){
+            prime.push(i);
+        }
+    }
+    return prime;
+} 
+
+console.log(primeRange(1, 40));
