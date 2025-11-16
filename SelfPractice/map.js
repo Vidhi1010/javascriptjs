@@ -10,7 +10,7 @@ const x = function(arr) {
 const map = function(arr, callback) {
     const output = [];
     for(let i = 0; i < arr.length; i++) {
-        output.push(callback(arr[i]));
+        output.push(callback(arr[i], i, arr));
     }
     return output;
 }

@@ -86,7 +86,7 @@ const promiseFive = new Promise(function (resolve, reject) {
     }
   }, 1000);
 });
-
+8
 async function consumePromiseFive() {
   try {
     const response = await promiseFive;
@@ -119,6 +119,7 @@ async function getAllUsers() {
 //fetch() is a built-in JavaScript function (part of the browser API).
 //fetch() itself returns a Promise.
 
+
 fetch("https://jsonplaceholder.typicode.com/users")
 .then((response) => {
     return response.json();
@@ -129,3 +130,36 @@ fetch("https://jsonplaceholder.typicode.com/users")
 .catch((error) => {
     console.log(error);
 })
+
+
+/////////////              chaining promise1 and promise2            ///////////////////
+
+const promise1 = new Promise(function(resolve, reject) {
+    setTimeout(function () {
+        resolve({ username: "vaibhav", passward: 123 })
+  }, 2000);
+})
+
+const promise2 = new Promise(function(resolve, reject) {
+    setTimeout(function () {
+      resolve({username: "vidhi", passward: 4666})
+  }, 1000);
+})
+
+promise1.then((data) => {
+    console.log(data);
+    return promise2;
+}). then((data2) => {
+    console.log(data2);
+}).catch((error) => {
+    console.log(error);
+})
+
+
+/* const vidhi = promise1.then((data) => {
+    console.log(data);
+    return data;
+});
+console.log(vidhi); */
+
+
