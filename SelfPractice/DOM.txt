@@ -1,0 +1,5 @@
+The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML-based markup language document.
+
+It is a tree-like structure that the browser creates from your HTML.
+It allows JavaScript to see, change, and control your webpage.
+
